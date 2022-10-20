@@ -1,0 +1,241 @@
+* { /* O asterisco (*) serve para selecionar tudo */
+    margin: 0%; /*zerar as magin no browser ao visualizar*/
+    padding: 0%; /*zerar os preechimentos das caixas*/
+    box-sizing: border-box; /*mudar o tamanho da caixa, fixando um tamanho que não pode ultra passar com o "border-box*/
+} 
+
+.wrapper {
+    background:rgb(206, 125, 169);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.separacao {
+    background-color: #ffffff;
+    padding-bottom: 4px;
+    border-radius: 10px;
+}
+
+header {
+    background:rgb(100, 4, 57);
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+    height: 240px;
+    position: relative;
+    align-items: center;
+}
+
+a {
+    text-decoration: none; /* tira o sublinhado do link */
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    margin-right:0px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+}
+
+.logo:hover {
+    transform: scale(1.2);    
+}
+
+header div img {
+    width: 100%;
+    margin-top: -10px; /* infelizmente por alguma razão não consegui alinahr da forma facil */
+}
+
+.navegar {
+    position: relative;
+    width: 1560px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+}
+
+.navegar div {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    background-color: #de1281ff;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+}
+
+.navegar div:nth-child(2) {
+    width: 300px;
+}
+
+.ods10:active {
+    color:#ffffff;
+}
+
+.navegar div:nth-child(1):active {
+    background-color:#de1281ff;
+}
+
+.imigreat:active {
+    color:#000000;
+}
+
+.navegar div:nth-child(2):active {
+    background-color: #00ffff;
+}
+
+.sobre:active {
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #00ffff 0%, #40abe3ff 25%, #9345c7ff 50%, #b307b3ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+
+.navegar div:nth-child(3):active {
+    background-color: #000000;
+}
+
+h2 {
+   line-height: 100px;
+   font-size: 40px;
+   vertical-align: middle;
+}
+
+.ods10 {
+    text-transform: uppercase;
+    background:#ffffff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;    
+}
+
+.imigreat {
+    text-transform: uppercase;
+    background:#ffffff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    width: 300px;
+}
+
+.sobre {
+  text-transform: uppercase;
+  background:#ffffff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color:transparent; /* aqui coloquei o texto com gradiente */
+}
+
+main {
+    color: #ffffff;
+    width: 1680px; /*que ela fique cubra apenas 90% da largura da tela*/
+    margin: 32px auto; /*Ela fique centralizada no meio respetitando os 10% de distancia que sobrou*/ /* a margin no primeiro e a parte superior que e 32px, funcionado como margin-top, já o segundo valor auto, serve para definir o valor da margin de baixo */
+    height: 800px;
+    display: grid; /* Separa as caixar */
+    gap: 24px; /*determina como a as imagens deve estar alinhada em coluna */
+    /* margin-top: 32px;  */ /* espaço entre as os texto e as imagem na parte superior (minha foto de perfil) */
+}
+
+section {
+    margin: 16px auto;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo div:nth-child(1){
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+main section div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.titulo div:nth-child(2){
+    height: 100px;
+    line-height: 100px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.texto div {
+    margin-top: -25%;
+    width: 900px;
+    text-align: justify;
+    background-color:#de1281ff;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    height: 400px;
+}
+
+p {
+    margin: 20px;
+}
+
+.titulo {
+    animation: baixocima .8s backwards;
+}
+
+.texto {
+    animation: baixocima .8s backwards;
+    animation-delay: 1s;
+}
+
+.texto div p:nth-child(1) {
+    animation: esquerdadireita .8s backwards;
+    animation-delay: 2s;
+}
+
+.texto div p:nth-child(3) {
+    animation: esquerdadireita .8s backwards;
+    animation-delay: 3s;
+}
+
+.texto div p:nth-child(5) {
+    animation: esquerdadireita .8s backwards;
+    animation-delay: 4s;
+}
+
+.texto div p:nth-child(7) {
+    animation: esquerdadireita .8s backwards;
+    animation-delay: 5s;
+}
+
+@keyframes baixocima {
+    from {
+        opacity: 0;
+        transform: translatey(+30px);
+    }
+    
+    to {
+        opacity: 1;
+        transform:  translateY(0);
+    }
+}
+
+@keyframes esquerdadireita {
+    from {
+        opacity: 0;
+        transform: translatex(-30px); /* dessa vez ele ira subir a imagem vindo de baixo para cima */
+    }
+
+    to {
+        opacity: 1;
+        transform:  translateY(0);
+    }
+}

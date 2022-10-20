@@ -1,0 +1,265 @@
+* { /* O asterisco (*) serve para selecionar tudo */
+    margin: 0%; /*zerar as magin no browser ao visualizar*/
+    padding: 0%; /*zerar os preechimentos das caixas*/
+    box-sizing: border-box; /*mudar o tamanho da caixa, fixando um tamanho que não pode ultra passar com o "border-box*/
+} 
+
+.wrapper {
+    background:#ffffff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.separacao {
+    background-color: #000000;
+    padding-bottom: 4px;
+    border-radius: 10px;
+}
+
+header {
+    background-image: linear-gradient(90deg, #00ffff 0%, #40abe3ff 25%, #9345c7ff 50%, #b307b3ff 100%);
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+    height: 240px;
+    position: relative;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    margin-right:0px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+header div img {
+    width: 100%;
+    margin-top: -10px; /* infelizmente por alguma razão não consegui alinahr da forma facil */
+}
+
+.logo:hover {
+    transform: scale(1.2);    
+}
+
+.navegar {
+    position: relative;
+    width: 1560px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+}
+
+.navegar div {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+.navegar div:nth-child(2) {
+    width: 300px;
+}
+
+.ods10:active {
+    color:#ffffff;
+}
+
+.navegar div:nth-child(1):active {
+    background-color: #de1281ff;
+}
+
+.imigreat:active {
+    color:#000000;
+}
+
+.navegar div:nth-child(2):active {
+    background-color: #00ffff;
+}
+
+.sobre:active {
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #00ffff 0%, #40abe3ff 25%, #9345c7ff 50%, #b307b3ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+
+.navegar div:nth-child(3):active {
+    background-color: #000000;
+}
+
+h2 {
+   line-height: 100px;
+   font-size: 40px;
+   vertical-align: middle;
+}
+
+.ods10 {
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #00ffff 0%, #40abe3ff 25%, #9345c7ff 50%, #b307b3ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;    
+}
+
+.imigreat {
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #00ffff 0%, #40abe3ff 25%, #9345c7ff 50%, #b307b3ff 100%);
+    background-clip: text;
+     -webkit-background-clip: text;
+    color:transparent;
+    width: 300px;
+}
+
+.sobre {
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg, #00ffff 0%, #40abe3ff 25%, #9345c7ff 50%, #b307b3ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color:transparent; /* aqui coloquei o texto com gradiente */
+}
+
+.wrapper div:nth-child(2) {
+    margin: 5px auto;
+}
+
+main {
+    max-width: 1200px; /*tamano maximo da main caixa principal e de 580 pixel*/
+    width: 90%; /*que ela fique cubra apenas 90% da largura da tela*/
+    margin: 32px auto; /*Ela fique centralizada no meio respetitando os 10% de distancia que sobrou*/ /* a margin no primeiro e a parte superior que e 32px, funcionado como margin-top, já o segundo valor auto, serve para definir o valor da margin de baixo */
+    display: grid; /* Separa as caixar */
+    gap: 24px; /*determina como a as imagens deve estar alinhada em coluna */
+    
+    /* margin-top: 32px;  */ /* espaço entre as os texto e as imagem na parte superior (minha foto de perfil) */
+}
+
+main section:nth-child(1) {
+    margin-left: 60%;
+}
+
+main section:nth-child(2) {
+    margin-right: 60%;
+}
+
+main section:nth-child(3) {
+    margin-left: 60%;
+}
+
+main section:nth-child(4) {
+    margin-right: 60%;
+}
+
+section {
+    color: #000000; /* ta deixando padrão as cores brancas, dentro das secções */
+    background-image: linear-gradient(90deg, #00ffff 0%, #40abe3ff 25%, #9345c7ff 50%, #b307b3ff 100%);
+    padding-bottom: 4px;
+    padding-left: 4px; /* preenchimento interno de 4px */
+    border-radius: 10px; /* arrendondo a borda para 10px */
+    
+}
+
+section div{
+    background-image: linear-gradient(30deg, #000000 30%, #ffffff 35%, #ffffff 100%);
+    padding: 8px;
+    border-radius: 8px; /* arrendondo as bordas para 8px */
+    display: flex;
+    flex-direction: row;
+}
+
+.perfil {
+    width: 120px;
+    height: 120px;
+    background-image: linear-gradient(90deg, #00ffff 0%, #40abe3ff 25%, #9345c7ff 50%, #b307b3ff 100%);
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.perfil:hover {
+    transform:scale(1.15);
+}
+
+section div div a img{
+    width: 100%;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.descricao {
+    background-image: linear-gradient(#000000 0%, #000000 100%);
+    width: 250px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+ul {
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #00ffff 0%, #40abe3ff 25%, #9345c7ff 50%, #b307b3ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+
+main section {
+    animation: esquerdadireita .8s backwards;
+}
+
+main section:nth-child(1) { /* ele está dizendo para o main pegar a section filho numero 1, o primeiro section detro da mãe(main), e aplicar a propriedade abaixo */
+    animation: direitaesquerda .8s backwards;
+    animation-delay: 0s;
+}
+
+main section:nth-child(2) { /* aqui e o segundo */
+    animation-delay: 1s;
+}
+
+main section:nth-child(3) { /* aqui o teceiro */
+    animation: direitaesquerda .8s backwards;
+    animation-delay: 2s;
+}
+
+main section:nth-child(4) { /* aqui o teceiro */
+    animation-delay: 3s;
+}
+
+@keyframes direitaesquerda {
+    from {
+        opacity: 0;
+        transform: translatex(+30px); /* dessa vez ele ira subir a imagem vindo de baixo para cima */
+    }
+
+    to {
+        opacity: 1;
+        transform:  translateY(0);
+    }
+}
+
+@keyframes esquerdadireita {
+    from {
+        opacity: 0;
+        transform: translatex(-30px); /* dessa vez ele ira subir a imagem vindo de baixo para cima */
+    }
+
+    to {
+        opacity: 1;
+        transform:  translateY(0);
+    }
+}

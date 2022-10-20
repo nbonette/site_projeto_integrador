@@ -1,0 +1,156 @@
+* { /* O asterisco (*) serve para selecionar tudo */
+    margin: 0%; /*zerar as magin no browser ao visualizar*/
+    padding: 0%; /*zerar os preechimentos das caixas*/
+    box-sizing: border-box; /*mudar o tamanho da caixa, fixando um tamanho que não pode ultra passar com o "border-box*/
+} 
+
+.wrapper {
+    background:#ffffff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.separacao {
+    background-color: #000000;
+    padding-bottom: 4px;
+    border-radius: 10px;
+}
+
+header {
+    background:#40abe3ff;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+    height: 240px;
+    position: relative;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    margin-right:0px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+header div img {
+    width: 100%;
+    margin-top: -10px; /* infelizmente por alguma razão não consegui alinahr da forma facil */
+}
+
+.logo:hover {
+    transform: scale(1.2);    
+}
+
+.navegar {
+    position: relative;
+    width: 1560px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+}
+
+.navegar div {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: #000000;
+}
+
+.navegar div:nth-child(2) {
+    width: 300px;
+}
+
+.ods10:active {
+    color:#ffffff;
+}
+
+.navegar div:nth-child(1):active {
+    background-color: #de1281ff;
+}
+
+.imigreat:active {
+    color:#000000;
+}
+
+.navegar div:nth-child(2):active {
+    background-color: #00ffff;
+}
+
+.sobre:active {
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #00ffff 0%, #40abe3ff 25%, #9345c7ff 50%, #b307b3ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+
+.navegar div:nth-child(3):active {
+    background-color: #000000;
+}
+
+h2 {
+   line-height: 100px;
+   font-size: 40px;
+   vertical-align: middle;
+}
+
+.wrapper div:nth-child(2) {
+    margin: 5px auto;
+}
+
+.logoimigreat {
+    width: 500px;
+    height: 300px;
+    margin:10px auto;
+}
+
+.logoimigreat img {
+    width: 100%;
+}
+
+.cadastro {
+    margin-left:40%;
+    width: 300px;
+    height: 160px;
+    margin-top:-4%;
+}
+
+.cadastro div {
+    background-color:#40abe3ff;
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    margin-left: 70px;
+    text-align: center;
+}
+
+input {
+    margin: 10px;
+}
+
+h4 {
+    text-align: right;
+    margin: 8px;
+}
+
+h4 a {
+    color:#ff0000;
+}
+
